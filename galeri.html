@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap News Template - Free HTML Templates</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="keywords">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style class="cp-pen-styles">	body {
+            font-family: 'Source Sans Pro', sans-serif;
+          }
+          
+          #gridGallery {
+            max-width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          h2,
+          .ms-WPBody h2 {
+            color: #000;
+          }
+          
+          .box h3 {
+            color: #fff;
+            font-family: 'Source Sans Pro';
+          font-weight:700;
+          }
+          
+          section {
+            margin: 25px 0;
+          }
+          
+          #gridGallery .row {
+            background-color: black;
+          }
+          
+          .box {
+            background-position: center center;
+            background-size: cover;
+            border: 1px solid #fff;
+            transition: opacity .25s;
+            overflow: hidden;
+          }
+          
+          .hiddenText {
+            display: none !important;
+          }
+          
+          .box:hover {
+            cursor: pointer;
+            z-index: 1;
+          }
+          
+          #boxOne,
+          #boxTwo,
+          #boxSeven,
+          #boxEight {
+            height: 300px;
+          }
+          
+          #boxThree,
+          #boxFour,
+          #boxFive,
+          #boxSix {
+            height: 150px;
+          }
+          
+          #boxOne {
+            background-image: url("img/indir (1).jpeg");
+          }
+          
+          #boxEight {
+            background-image: url("img/indir (2).jpeg");
+          }
+          
+          #boxTwo {
+            background-image: url('img/indir (3).jpeg');
+          }
+          
+          #boxSeven {
+            background-image: url('img/images (1).jpeg');
+          }
+          
+          #boxThree {
+            background-image: url('img/images (2).jpeg');
+          }
+          
+          #boxSix {
+            background-image: url('img/images (3).jpeg');
+          }
+          
+          #boxFour {
+            background-image: url('img/images (4).jpeg');
+          }
+          
+          #boxFive {
+            background-image: url('img/images (5).jpeg');
+          }
+          
+          .full {
+            float: none;
+            height: 600px !important;
+            width: 1170px;
+            position: absolute;
+            z-index: 2;
+          }
+          
+          #gridH {
+            background-color: #eee;
+            min-height: 600px;
+            margin-bottom: 50px;
+          }
+          
+          #gridH .row {
+            margin-top: 150px;
+          }
+          
+          #gridH .row .full {
+            margin-top: -150px;
+          }
+          
+          .full:hover {
+            transform: scale(1);
+            box-shadow: none;
+          }
+          
+          .opacity {
+            opacity: .8;
+          }
+          
+          .captionBox {
+            background-color: rgba(0, 0, 0, 0.8);
+            bottom: 50px;
+            color: white;
+            left: 50px;
+            padding: 25px;
+            position: absolute;
+            opacity: 0;
+          }
+          
+          .captionBox p {
+            font-size: 16px;
+          font-weight:300;
+          }
+          
+          .captionBox h3 {
+            margin-top: 0;
+            text-transform: uppercase;
+          }
+          
+          .transition {
+            transition: 1s;
+          }
+          
+          .bottomRight {
+            left: auto;
+            right: 80px;
+          }
+          
+          .topRight {
+            left: auto;
+            right: 50px;
+            bottom: auto;
+            top: 50px;
+          }
+          
+          .topLeft {
+            bottom: auto;
+            top: 50px;
+          }
+          
+          .toggleIcon {
+            background-color: rgba(0, 0, 0, 0.7);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 26px 26px;
+            border-radius: 3px;
+            bottom: 15px;
+            height: 36px;
+            left: -100px;
+            opacity: 0;
+            padding: 10px;
+            position: absolute;
+            width: 36px;
+          }
+          
+          .box.full .toggleIcon {
+            background-color: rgba(0, 0, 0, 0.57);
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 3px;
+            top: 26px;
+            height: 36px;
+            left: 50px;
+            opacity: 0;
+            padding: 10px;
+            position: absolute;
+            width: 36px;
+          }
+          
+          .box:hover .toggleIcon {
+            opacity: 1;
+            left: 15px;
+            transition: all 0.25s ease 0s;
+            background-image: url('img/images (6).jpeg');
+          }
+          
+          .box.full .toggleIcon {
+            opacity: 1;
+            left: 50px;
+            top: 26px;
+            border-radius: 0;
+            background-image: url('img/images (7).jpeg');
+            background-size: 55%;
+          }
+          
+          .box.full .toggleIcon:hover {
+            background-color: black;
+            transition: all 0s ease 0;
+          }
+          
+          #gridGallery > .row {
+            margin: 0;
+          }
+          
+          @media (max-width: 1200px) {
+            .full {
+              width: 970px;
+            }
+          }
+          
+          @media (max-width: 992px) {
+            .full {
+              width: 750px;
+            }
+          }
+          
+          @media (max-width: 768px) {
+            #boxThree,
+            #boxFour,
+            #boxFive,
+            #boxSix {
+              height: 300px;
+            }
+            .toggleIcon {
+              display: none;
+            }
+            .full .captionBox {
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              width: 100%;
+              padding: 10px;
+            }
+            .full .captionBox p {
+              display: none;
+            }
+            .full .captionBox h3 {
+              margin-bottom: 0;
+            }
+            .box.full {
+              height: inherit;
+              width: 100%;
+            }
+            .box {
+              max-height: 150px !important;
+            }
+            #gridGallery .row {
+              background-color: transparent;
+            }
+            #gridH .row {
+              margin-top: 0px;
+            }
+            .box.full .toggleIcon {
+              height: 50px !important;
+              left: 0 !important;
+              top: 0 !important;
+              width: 50px !important;
+              display: block;
+            }
+            .mobileFunction {
+              float: left;
+              height: 150px;
+              width: 100%;
+            }
+            /* SHAREPOINT ONLY */
+          }</style>
+
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tb-contact">
+                            <p><i class="fas fa-envelope"></i>info@egeunigsk.org</p>
+                            <p><i class="fas fa-phone-alt"></i>+012 345 6789</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar Start -->
+        
+        <!-- Brand Start -->
+        <div class="brand">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="b-logo">
+                            <a href="index.html">
+                                <img src="img/ege1.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-4">
+                        <div class="b-ads">
+                            <h3>EGE ÜNiVERSİTESİ GENÇLİK VE SPOR KULÜBÜ</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                    <div class="b-logo">
+                        <a href="index.html">
+                            <img src="img/SFDA.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand End -->
+
+        <!-- Nav Bar Start -->
+       
+        <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 60px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Ana Sayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Klüp
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                        <a class="dropdown-item" href="single-page.html">Tarihçe</a>
+                      <a class="dropdown-item" href="misyon.html">Misyon</a>
+                      <a class="dropdown-item" href="vizyon.html">Vizyon</a>
+                      <a class="dropdown-item" href="tüzük.html">Tüzüğü</a>
+                     
+                      <a class="dropdown-item" href="yönetim_kurulu.html">Yönetim Kurulu</a>
+                      <a class="dropdown-item" href="üye.html">üyelik işlemleri</a>
+                     
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                     Branşlar
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="https://tbf.org.tr/ligler/tb2l-2019-2020/takim-detay/75292/genel-bakis">Basketbol</a>
+                      <a class="dropdown-item" href="futbol.html">Futbol</a>
+                      <a class="dropdown-item" href="sualtıragbisi.html">Sualtı Ragbisi</a>
+                      <a class="dropdown-item" href="hareket.html">Temel Haraket Egitimi Spor Okulu</a>
+                      <a class="dropdown-item" href="tenis.html">Tenis Spor Okulu    </a>
+                      <a class="dropdown-item" href="yüzme.html">Yüzme Spor Okulu</a>
+
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="haberler.html">Haberler</a>
+                </li>
+                <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Fikstür
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="fikstür.html"> TB2L FikstÜrü</a>
+                   ,
+                    </div>
+                  </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galeri</a>
+                </li>
+                <li class="nav-item dropdown dmenu">
+                <a class="nav-link dropdown-toggle" href="galeri.html" id="navbardrop" data-toggle="dropdown">
+                 Spor Okulları
+                </a>
+                <div class="dropdown-menu sm-menu">
+                  <a class="dropdown-item" href="https://izmiregebasketbol.com/">Basketbol Spor Okulu        
+                  </a>
+                  <a class="dropdown-item" href="ozelSporcular.html"> Özel Sporcular</a>
+                  <a class="dropdown-item" href="yüzme.html">Yüzme Spor Okulları</a>
+                  <a class="dropdown-item" href="sualtıragbisi.html">Sualtı Ragbisi Spor Okulu </a>
+                  <a class="dropdown-item" href="hareket.html">Temel Hareket Eğitimi Spor Okulu</a>
+                  <a class="dropdown-item" href="tenis.html">Tenis Spor Okulları</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wowslider.html">Tesislerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"> İletişim</a>
+              </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-default my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <!-- Nav Bar End -->
+        <section id="gridGallery">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-xs-6 box" id="boxOne">
+                  <div class="toggleIcon"></div>
+                  <div class="col-sm-6 captionBox hiddenText">
+                    <h3>Here is some text</h3>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                  </div>
+                </div>
+          
+                <div class="col-sm-3 col-xs-6 box" id="boxTwo">
+                  <div class="toggleIcon"></div>
+                  <div class="col-sm-6 captionBox hiddenText">
+                    <h3>Here is some text</h3>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                  </div>
+          
+                </div>
+          
+                <div class="col-sm-3 col-xs-6 box" id="boxThree">
+                  <div class="toggleIcon"></div>
+                  <div class="col-sm-6 captionBox hiddenText">
+                    <h3>Here is some text</h3>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                  </div>
+          
+                </div>
+          
+                <div class="col-sm-3 col-xs-6 box" id="boxFour">
+                  <div class="toggleIcon"></div>
+                  <div class="col-sm-6 captionBox hiddenText">
+                    <h3>Here is some text</h3>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                  </div>
+          
+                </div>
+          
+                <div class="col-sm-6 col-xs-6 pull-right box" id="boxEight">
+                  <div class="toggleIcon"></div>
+                  <div class="col-sm-6 captionBox hiddenText">
+                    <h3>Here is some text</h3>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                  </div>
+          
+                </div>
+          
+                <div class="col-sm-3 col-xs-6 pull-right box" id="boxSeven">
+                  <div class="toggleIcon"></div>
+                  <div class="col-sm-6 captionBox hiddenText">
+                    <h3>Here is some text</h3>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                  </div>
+          
+                </div>
+          
+                <div class="col-sm-3 col-xs-6 box" id="boxFive">
+                  <div class="toggleIcon"></div>
+                  <div class="col-sm-6 captionBox hiddenText bottomRight">
+                    <h3>Here is some text</h3>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                  </div>
+          
+                </div>
+          
+                <div class="col-sm-3 col-xs-6 box" id="boxSix">
+                  <div class="toggleIcon"></div>
+                  <div class="col-sm-6 captionBox hiddenText bottomRight">
+                    <h3>Here is some text</h3>
+                    <p>Fixie banh mi blog, YOLO sriracha roof party mumblecore post-ironic. Keytar 90's cornhole drinking vinegar deep v, VHS messenger bag Pinterest. Etsy farm-to-table Intelligentsia Thundercats, pork belly vegan authentic single-origin coffee dreamcatcher
+                      bespoke master cleanse street art art party.</p>
+                  </div>
+          
+                </div>
+          
+          
+              </div>
+              <!--.row-->
+          
+            </div>
+            <!--.container-->
+          
+          
+          </section>
+        
+          
+  
+        
+        <!-- Footer Start -->
+          <!-- Footer Start -->
+          <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Bize Ulaşın</h3>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Erzene Mah.Gençlik Cad. No:12/1 Bornova, İzmir</p>
+                                <p><i class="fa fa-envelope"></i>info@egeunigsk.org</p>
+                                <p><i class="fa fa-phone"></i> +012 345 6789</p>
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Sayfalarımız</h3>
+                            <ul>
+                                <li><a href="#">Tarihçe</a></li>
+                                <li><a href="#">Misyon</a></li>
+                                <li><a href="#">Vizyon </a></li>
+                                <li><a href="#">Tüzük</a></li>
+                                <li><a href="#">Yönetim Kurulu </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title"> </br></h3>
+                            <ul>
+                                <li><a href="#">Tesisler</a></li>
+                                <li><a href="#">Futbol</a></li>
+                                <li><a href="#">Basketbol</a></li>
+                                <li><a href="#"> Yüzme</a></li>
+                                <li><a href="#">Tenis </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title"> </br></h3>
+                            <ul>
+                                <li><a href="haberler.html">Haberler</a></li>
+                                <li><a href="fikstür.html">Fikstür</a></li>
+                                <li><a href="galeri.html">Galeri</a></li>
+                                <li><a href="#"> Spor Okulları</a></li>
+                                <li><a href="contact">İletişim </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+    
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Ege Üniversitesi &copy; <a href="">  Gençlik Klübü </p>
+                    </div>
+
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <div class="col-md-6 template-by">
+                        <p>Ünipa <a href="http://www.unipa.com.tr/"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script><script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script >$(document).ready(function() {
+
+  $(".box").on("click", function() {
+    $(this).siblings().toggleClass("hidden");
+    $(this).toggleClass("full");
+    $(".captionBox").toggleClass("hiddenText");
+    $(this).children().animate({
+      opacity: "1"
+    }, 500, function() {});
+  });
+
+  if ($(window).width() < 768) {
+    $(".box").on("click", function() {
+      $("#gridGallery").toggleClass("mobileFunction");
+    });
+  }
+
+  if ($(window).width() >= 768) {
+
+    $(".box").hover(function() {
+      $(this).siblings().toggleClass("opacity");
+    });
+
+  }
+
+  $(".horizontal").click(function() {
+    $(this).toggleClass("full");
+    $(".captionBox").toggleClass("hiddenText");
+    $(this).children().animate({
+      opacity: "1"
+    }, 500, function() {});
+  });
+
+  $(".horizontal").hover(function() {
+    $(this).siblings().toggleClass("opacity");
+  });
+
+});
+//# sourceURL=pen.js
+</script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+            
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
